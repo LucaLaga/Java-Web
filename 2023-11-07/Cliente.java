@@ -1,12 +1,11 @@
-package VenditeGiocattolo;
-
 public class Cliente {
     private final int id;
     private String nome;
     private String email;
-    public static int nextId; 
+    private double conto;
+    public static int nextId;
 
-    public Cliente(String nome, String email){
+    public Cliente(String nome, String email, double conto){
         this.id = nextId++;
         this.nome = nome;
         this.email = email;
@@ -25,6 +24,10 @@ public class Cliente {
         return this.email;
     }
 
+    public double getConto(){
+        return this.conto;
+    }
+
     // Setters
     public void setNome(String nome){
         if(nome!=null){
@@ -35,6 +38,12 @@ public class Cliente {
     public void setEmail(String email){
         if(nome!=null){
             this.email = email;
+        }
+    }
+
+    public void aggiornaConto(double conto){
+        if(conto >= 0){
+            this.conto = conto;
         }
     }
 
