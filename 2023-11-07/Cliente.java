@@ -7,6 +7,7 @@ public class Cliente {
     public static int nextId;
     private final boolean isAdmin;
 
+    
     public Cliente(String nome, String email, double conto){
         this.id = nextId++;
         this.nome = nome;
