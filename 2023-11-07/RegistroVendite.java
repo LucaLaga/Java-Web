@@ -19,6 +19,7 @@ public abstract class RegistroVendite {
         }else{
             newVendita.vendi();
         }
+        
         vendite.add(newVendita);
     }
 }
