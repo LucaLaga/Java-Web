@@ -1,3 +1,5 @@
+package VenditeGiocattolo;
+
 public class Cliente {
     private final int id;
     private String nome;
