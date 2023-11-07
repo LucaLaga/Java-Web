@@ -5,7 +5,9 @@ Implementare un'applicazione Java per gestire l'inventario e le vendite di un ne
 
 ## Definizione delle Classi
 Crea una classe Giocattolo con campi come id, nome, prezzo e età consigliata.
+
 Crea una classe Cliente con campi come id, nome e indirizzo email.
+
 Crea una classe Vendita che registra gli acquisti dei clienti.
 
 ## Gestione dell'Inventario
