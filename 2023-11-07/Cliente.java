@@ -1,14 +1,17 @@
 public class Cliente {
     private final int id;
+    private final static String emailAdmin = "admin@admin.it";
     private String nome;
     private String email;
     private double conto;
     public static int nextId;
+    private final boolean isAdmin;
 
     public Cliente(String nome, String email, double conto){
         this.id = nextId++;
         this.nome = nome;
         this.email = email;
+        this.isAdmin = this.email.equals(emailAdmin);
     }
 
     // Getters
@@ -26,6 +29,10 @@ public class Cliente {
 
     public double getConto(){
         return this.conto;
+    }
+
+    public boolean checkAdmin(){
+        return this.isAdmin;
     }
 
     // Setters
