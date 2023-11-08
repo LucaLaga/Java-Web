@@ -16,4 +16,10 @@ public class Inventario {
             this.giocattoli.add(giocattolo);
         }
     }
+
+    public void removeGiocattolo(Giocattolo giocattolo){
+        if(giocattolo != null & this.cliente.checkAdmin()){
+            this.giocattoli.remove(giocattolo);
+        }
+    }
 }
