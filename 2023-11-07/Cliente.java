@@ -1,4 +1,4 @@
-public class Cliente implements Utente {
+public class Cliente {
     private final int id;
     private final static String emailAdmin = "admin@admin.it";
     private String nome;
@@ -60,15 +60,5 @@ public class Cliente implements Utente {
         return this.id + ": "
         + this.nome + " - "
         + this.email;
-    }
-
-    @Override
-    public void vendi(Giocattolo giocattolo){
-        RegistroVendite.vendi(this, giocattolo);
-    }
-
-    @Override
-    public void acquista(Giocattolo giocattolo) {
-        RegistroVendite.acquista(this, giocattolo);
     }
 }
